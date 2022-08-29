@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contacts</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="main-container">
+        <navbar></navbar>
+
+        <header class="header_content">
+            <div class="header_image">
+              <img class="header-img" src="../../assets/images/contacts.jpg" alt="Header" />
+            </div>
+              <div>
+                <h2 class="header_content_text">КОНТАКТИ</h2>
+              </div>
+              <div class="header_footer">
+                <ul class="header_links">
+                  <li><a href="http://localhost:3000/">ГОЛОВНА</a></li>
+                  <li class="slash">/</li>
+                  <li class="">КОНТАКТИ</li>
+                </ul>
+            </div>
+        </header>          
+
+        <section class="section_details container">
+            <div class="details_content">
+                <h3>КОНТАКТНІ ДАНІ</h3>
+                <p>На цій сторінці ви можете знайти всі необхідні контакти, щоб зв'язатися зі адміністрацією музею, якщо ви <br>
+                    хотіли б відвідати, замовити подію або поставити запитання.</p>
+            </div>
+            <div class="details_cards">
+                <div class="details_card">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h3>Телефон</h3>
+                    <ul class="details_tel">
+                        <li><a href="tel:(032) 239-27-00">Телефон 01: (032) 239-27-00</a></li>
+                        <li><a href="tel:(032) 239-27-11">Телефон 02: (032) 239-27-11</a></li>
+                    </ul>
+                </div>
+                <div class="details_card card_line">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Адреса</h3>
+                    <ul class="details_tel">
+                        <li><a href="#map">м. Львів, вул. Генерала Чупринки, 103, навчальний корпус №4, 79057</a></li>
+                    </ul>
+                </div>
+                <div class="details_card card_line">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Eмеіл</h3>
+                    <ul class="details_tel">
+                        <li><a href="mailto:andrijkostelnij72@gmail.com">botany-ilspg@nltu.edu.ua</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="details_content">
+                <h3>Зв'язатися</h3>
+                <p>Не соромтеся залишити рядок або поставити запитання за допомогою контактної форми нижче.</p>
+            </div>
+            <form id="form" class="details_form" action="">
+                <div class="details_form_input">
+                    <input id="contact-name" class="_req" name="name" type="text">
+                    <div class="details_form_label_effect"></div>
+                    <label class="placeholder" for="contact-name">Ім'я</label>
+                </div>
+                <div class="details_form_input">
+                    <input id="contact-phone" class="_tel _req" name="phone" type="text">
+                    <div class="details_form_label_effect"></div>
+                    <label class="placeholder" for="contact-phone">Телефон</label>
+                </div>                
+                <div class="details_form_input">
+                    <input id="contact-email" class="_email _req" name="email" type="text">
+                    <div class="details_form_label_effect"></div>
+                    <label class="placeholder" for="contact-email">Емеіл</label>
+                </div>
+                <div class="details_form_input special_input">
+                    <input id="contact-message" class="_req" name="message" type="text">
+                    <div class="details_form_label_effect"></div>
+                    <label class="placeholder" for="contact-message">Повідомлення</label>
+                </div>
+                <button class="submit" type="submit">Відправити повідомлення</button>
+            </form>
+        </section>
+
+        <map></map>
+
+        <footer></footer>
+    </div>
+
+    <script src="./contacts.js"></script>
+</body>
+</html>

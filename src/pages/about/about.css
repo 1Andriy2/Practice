@@ -1,0 +1,129 @@
+body{
+    background-color: var(--main-color);
+}
+
+.header_content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    color: var(--white-color);
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    .header_content{
+        min-height: 50vh;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header_content{
+        min-height: 40vh;
+    }
+}
+
+.header_image{
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.header-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header_content_text{
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+
+@media (min-width: 992px){
+    .header_content_text {
+        font-size: 55px;
+        line-height: 0.87273;
+    }
+}
+
+.header_footer{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px 0;
+}
+
+.header_links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .1em;
+}
+
+.header_links a{
+    text-decoration: none;
+    color: var(--video-green-color-active);
+}
+
+.header_links a:hover{
+    color: var(--white-color);
+}
+
+.slash{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+}
+
+.history_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--main-color);
+    padding: 60px 80px;
+}
+
+@media (max-width: 768px){
+    .history_container {
+        flex-direction: column-reverse;
+    }
+}
+
+.history_img img{
+    position: relative;
+}
+
+.history_content {
+    color: var(--white-color);
+    text-align: start;
+}
+
+.history_content h2{
+    text-transform: uppercase;
+    font-size: 38px;
+    line-height: 1.5;
+    letter-spacing: .05em;
+}
+
+.history_content p {
+    letter-spacing: .02em;
+}
+
+@media (max-width: 992px){
+    .history_content h2 {
+        font-size: 55px;
+        line-height: 0.87273;
+    }
+}
